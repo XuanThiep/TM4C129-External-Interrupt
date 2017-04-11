@@ -1,0 +1,248 @@
+###############################################################################
+#
+# IAR ELF Linker V8.10.1.12857/W32 for ARM                11/Apr/2017  14:20:04
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Exe\Project.out
+#    Map file     =  
+#        E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\List\Project.map
+#    Command line =  
+#        -f "C:\Users\Xuan Thiep\AppData\Local\Temp\EW4FD0.tmp"
+#        ("E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\adc.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\aes.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\can.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\comp.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\cpu.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\crc.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\des.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\eeprom.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\emac.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\epi.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\flash.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\fpu.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\gpio.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\hibernate.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\i2c.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\interrupt.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\lcd.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\main.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\mpu.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\mytm4c129.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\onewire.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\pwm.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\qei.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\shamd5.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\ssi.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\sw_crc.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\sysctl.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\sysexc.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\systick.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\timer.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\uart.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\udma.o" "E:\MyGitHub\TM4C129-External-Interrupt\IAR
+#        File System\Debug\Obj\usb.o"
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Obj\watchdog.o" -o
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\Exe\Project.out" --map
+#        "E:\MyGitHub\TM4C129-External-Interrupt\IAR File
+#        System\Debug\List\Project.map" --config "C:\Program Files (x86)\IAR
+#        Systems\Embedded Workbench
+#        8.0\arm\config\linker\TexasInstruments\TM4C1294NC.icf" --semihosting
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x000fffff] { ro };
+"P2":  place in [from 0x20000000 to 0x2003ffff] { rw, block CSTACK, block HEAP };
+
+  Section   Kind        Address    Size  Object
+  -------   ----        -------    ----  ------
+"A0":                              0x40
+  .intvec   ro code  0x00000000    0x40  vector_table_M.o [5]
+                   - 0x00000040    0x40
+
+"P1":                             0xa90
+  .text     ro code  0x00000040   0x4c0  sysctl.o [1]
+  .text     ro code  0x00000500   0x3cc  gpio.o [1]
+  .text     ro code  0x000008cc    0xb4  interrupt.o [1]
+  .text     ro code  0x00000980     0x8  cpu.o [1]
+  .text     ro code  0x00000988    0xd4  main.o [1]
+  .text     ro code  0x00000a5c    0x22  fpinit_M.o [4]
+  .text     ro code  0x00000a7e     0x2  vector_table_M.o [5]
+  .text     ro code  0x00000a80    0x1a  cmain.o [5]
+  .text     ro code  0x00000a9a     0x4  low_level_init.o [3]
+  .text     ro code  0x00000a9e     0x4  exit.o [3]
+  .text     ro code  0x00000aa4     0xa  cexit.o [5]
+  .text     ro code  0x00000ab0    0x14  exit.o [6]
+  .text     ro code  0x00000ac4     0xc  cstartup_M.o [5]
+                   - 0x00000ad0   0xa90
+
+"P2":                            0x8270
+  VTABLE    uninit   0x20000000   0x26c  interrupt.o [1]
+  CSTACK             0x20000270  0x8000  <Block>
+    CSTACK  uninit   0x20000270  0x8000  <Block tail>
+                   - 0x20008270  0x8270
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  rw data
+    ------            -------  -------
+E:\MyGitHub\TM4C129-External-Interrupt\IAR File System\Debug\Obj: [1]
+    cpu.o                   8
+    gpio.o                972
+    interrupt.o           180      620
+    main.o                212
+    sysctl.o            1 216
+    ----------------------------------
+    Total:              2 588      620
+
+command line: [2]
+    ----------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                  4
+    low_level_init.o        4
+    ----------------------------------
+    Total:                  8
+
+m7M_tls.a: [4]
+    fpinit_M.o             34
+    ----------------------------------
+    Total:                 34
+
+rt7M_tl.a: [5]
+    cexit.o                10
+    cmain.o                26
+    cstartup_M.o           12
+    vector_table_M.o       66
+    ----------------------------------
+    Total:                114
+
+shb_l.a: [6]
+    exit.o                 20
+    ----------------------------------
+    Total:                 20
+
+    Gaps                    4
+    Linker created              32 768
+--------------------------------------
+    Grand Total:        2 768   33 388
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x00000a81         Code  Gb  cmain.o [5]
+BUTTON_ISR              0x000009ed   0x56  Code  Gb  main.o [1]
+CPUcpsie                0x00000981    0x8  Code  Gb  cpu.o [1]
+CSTACK$$Base            0x20000270          --   Gb  - Linker created -
+CSTACK$$Limit           0x20008270          --   Gb  - Linker created -
+GPIODirModeSet          0x00000541   0x28  Code  Gb  gpio.o [1]
+GPIOIntClear            0x000006cf    0x8  Code  Gb  gpio.o [1]
+GPIOIntEnable           0x000006b9    0x6  Code  Gb  gpio.o [1]
+GPIOIntRegister         0x000006d7   0x14  Code  Gb  gpio.o [1]
+GPIOIntStatus           0x000006bf   0x10  Code  Gb  gpio.o [1]
+GPIOIntTypeSet          0x00000569   0x4c  Code  Gb  gpio.o [1]
+GPIOPadConfigSet        0x000005b5  0x104  Code  Gb  gpio.o [1]
+GPIOPinRead             0x000006f3    0x8  Code  Gb  gpio.o [1]
+GPIOPinTypeGPIOOutput   0x00000703    0xa  Code  Gb  gpio.o [1]
+GPIOPinWrite            0x000006fb    0x8  Code  Gb  gpio.o [1]
+IntEnable               0x00000905   0x58  Code  Gb  interrupt.o [1]
+IntMasterEnable         0x000008cd    0x8  Code  Gb  interrupt.o [1]
+IntRegister             0x000008dd   0x28  Code  Gb  interrupt.o [1]
+Region$$Table$$Base     0x00000000          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00000000          --   Gb  - Linker created -
+SysCtlClockFreqSet      0x0000007f  0x206  Code  Gb  sysctl.o [1]
+SysCtlPeripheralEnable  0x00000061    0x8  Code  Gb  sysctl.o [1]
+_GPIOIntNumberGet       0x00000501   0x40  Code  Lc  gpio.o [1]
+_SysCtlMemTimingGet     0x00000041   0x20  Code  Lc  sysctl.o [1]
+__cmain                 0x00000a81         Code  Gb  cmain.o [5]
+__exit                  0x00000ab1   0x14  Code  Gb  exit.o [6]
+__iar_init_vfp          0x00000a5d         Code  Gb  fpinit_M.o [4]
+__iar_program_start     0x00000ac5         Code  Gb  cstartup_M.o [5]
+__iar_systems$$module {Abs}
+                        0x00000001         Data  Gb  command line/config [2]
+__low_level_init        0x00000a9b    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000         Data  Gb  vector_table_M.o [5]
+_call_main              0x00000a8d         Code  Gb  cmain.o [5]
+_exit                   0x00000aa5         Code  Gb  cexit.o [5]
+_main                   0x00000a97         Code  Gb  cmain.o [5]
+exit                    0x00000a9f    0x4  Code  Gb  exit.o [3]
+g_pfnRAMVectors         0x20000000  0x26c  Data  Lc  interrupt.o [1]
+g_pppui32XTALtoVCO      0x00000318  0x1b0  Data  Lc  sysctl.o [1]
+g_ppui32GPIOIntMapBlizzard
+                        0x00000734   0xc0  Data  Lc  gpio.o [1]
+g_ppui32GPIOIntMapSnowflake
+                        0x000007f4   0xd8  Data  Lc  gpio.o [1]
+g_pui32EnRegs           0x0000096c   0x14  Data  Lc  interrupt.o [1]
+g_pui32VCOFrequencies   0x000004f8    0x8  Data  Lc  sysctl.o [1]
+g_pui32Xtals            0x000002ac   0x6c  Data  Lc  sysctl.o [1]
+g_sXTALtoMEMTIM         0x000004c8   0x30  Data  Lc  sysctl.o [1]
+main                    0x00000989   0x64  Code  Gb  main.o [1]
+
+
+[1] = E:\MyGitHub\TM4C129-External-Interrupt\IAR File System\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+   2 768 bytes of readonly  code memory
+  33 388 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
